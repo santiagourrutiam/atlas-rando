@@ -1,0 +1,156 @@
+body {
+  font-family: "roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #242825;
+  text-align: left;
+  margin-top: 0.5em;
+  font-style: italic;
+  padding: 0 10px 0 10px;
+  border-left: 3px solid #ddd;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 25px;
+}
+
+h1, h2 {
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #34495e;
+}
+
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  justify-items: end;
+  padding: 0px;
+  height: 31rem;
+  background-image: url("static/img/cover-pehuenche.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.cover-container div {
+  display: flex;
+  width: 100%;
+}
+.cover-container div h1, .cover-container div h2 {
+  color: white;
+  padding: 0.625rem;
+  text-shadow: #333 0.0625rem 0.0625rem 0.0625rem;
+}
+.cover-container div h1 {
+  font-size: 3rem;
+  background-color: rgba(23, 195, 178, 0.3960784314);
+}
+.cover-container div h2 {
+  font-size: 2rem;
+  background-color: rgba(63, 96, 150, 0.5843137255);
+}
+
+.index-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(23, 195, 178, 0.3960784314);
+}
+.index-container div {
+  width: 100%;
+}
+.index-container ul {
+  list-style: none;
+}
+.index-container li {
+  padding: 0.2rem 0px;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.index-container .index-li-first-level {
+  padding-left: 2rem;
+  text-decoration: none;
+}
+.index-container .index-li-second-level {
+  padding-left: 4rem;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+.infoguide-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  align-content: flex-start;
+}
+.infoguide-container div {
+  margin: 1rem auto;
+  width: 100%;
+}
+.infoguide-container h1 {
+  font-size: 100%;
+  border-left: 4px solid rgba(23, 195, 178, 0.3960784314);
+  background-color: #3F6096;
+  color: #FFCB77;
+  padding: 0.5rem;
+  margin: auto;
+  max-height: 4rem;
+}
+.infoguide-container h2 {
+  border-left: 4px solid rgba(63, 96, 150, 0.5843137255);
+  margin-top: 1.5rem;
+  padding: 0 10px 0 10px;
+}
+.infoguide-container p {
+  margin-top: 0.8rem;
+}
+
+/*# sourceMappingURL=style.css.map */

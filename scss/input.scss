@@ -1,0 +1,196 @@
+//Variables principales
+$primary_color: #3F609695;
+$secondary_color: #17C3B265;
+$background_color: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
+$text_color: #333333;
+$font-family: 'roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$base-font-size: 1rem;
+$base-line-height: 1.6;
+$text-color: #333;
+$heading-color-1: #2c3e50;
+$heading-color-2: #34495e;
+$max-content-width: 75%;
+$figcaption-color: #242825;
+$figcaption-border-color: #ddd; // New variable for border color
+
+// Mixins
+@mixin heading-base {
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 1.5em;
+  }
+
+body {
+    font-family: $font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    max-width: $max-content-width;
+    margin: 0 auto;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: $figcaption-color;
+    text-align: left; // Changed to left align for better alignment with border
+    margin-top: 0.5em;
+    font-style: italic;
+    padding: 0 10px 0 10px; // Added left padding
+    border-left: 3px solid $figcaption-border-color;
+    display: inline-block; // To make the border only as wide as the text
+    max-width: 100%; // Ensures it doesn't overflow its container
+    max-height: 25px;
+}
+
+// Estilos para los encabezados
+h1, h2 {
+  @include heading-base;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: $heading-color-1;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: $heading-color-2;
+}
+
+.cover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    justify-items: end;
+    padding: 0px;
+    height: 31rem;
+    background-image: url('static/img/cover-pehuenche.jpg'); //Image for the Cover, change this route for a different image.
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+        div {
+            display: flex;
+            width: 100%;
+
+        h1, h2 {
+            color: white;
+            padding: 0.625rem; // 10px converted to rem
+            text-shadow: #333 0.0625rem 0.0625rem 0.0625rem; // 1px converted to rem
+        }
+        
+        h1 {
+            font-size: 3rem;
+            background-color: $secondary_color;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            background-color: $primary_color;
+        }
+      }
+}
+
+.index-container {
+    display: flex;
+    flex-direction: row;
+    background-color: $secondary_color;
+
+    div{
+      width: 100%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding: 0.2rem 0px;
+        font-size: 1rem;
+        text-decoration: underline;
+    }
+
+    .index-li-first-level {
+        padding-left: 2rem;
+        text-decoration: none;
+    }
+    
+    .index-li-second-level {
+        padding-left: 4rem;
+        text-decoration: none;
+    }
+}
+
+// Ajustes para mejorar la legibilidad en pantallas pequeñas
+@media (max-width: 600px) {
+    body {
+      font-size: 16px;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+}
+
+
+.infoguide-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  align-content: flex-start;
+
+
+      div {
+        margin: 1rem auto;
+        width: 100%;
+      }
+  
+        h1{
+          font-size:100%;
+          border-left: 4px solid $secondary_color;
+          background-color: #3F6096;
+          color: #FFCB77;
+          padding: 0.5rem;
+          margin: auto;
+          max-height: 4rem;
+
+        }
+        h2{
+          border-left: 4px solid $primary_color;
+          margin-top: 1.5rem;
+          padding: 0 10px 0 10px;
+        }
+        p {
+          margin-top: 0.8rem;
+        }
+}
+
+
